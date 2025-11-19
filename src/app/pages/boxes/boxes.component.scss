@@ -2,16 +2,9 @@
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 16px;
-  // padding: 16px;
 
   &-sm {
     --box-font-size: 14px;
-    //display: -webkit-box;
-    //-webkit-line-clamp: 4;   /* show only 4 lines */
-    //-webkit-box-orient: vertical;
-    //overflow: hidden;
-    //text-overflow: ellipsis;
-
   }
 
   &-md {
@@ -26,6 +19,17 @@
     margin: 0;
     font-size: var(--box-font-size);
     padding: 16px;
+
+    /* Multi-line ellipsis */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* Fix line spacing */
+    line-height: 1.4;
+    max-height: calc(1.4em * 5);
 
     /**
      * here's your task
