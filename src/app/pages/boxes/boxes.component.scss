@@ -6,6 +6,12 @@
 
   &-sm {
     --box-font-size: 14px;
+    //display: -webkit-box;
+    //-webkit-line-clamp: 4;   /* show only 4 lines */
+    //-webkit-box-orient: vertical;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+
   }
 
   &-md {

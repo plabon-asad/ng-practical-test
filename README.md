@@ -1,5 +1,26 @@
 # NgPracticalTest
+## Task 01
+```bash
+// here's the task:
+  // the page will initially call an api to load the character list
+  // the data is paginated, so when the page is changed, you need to load the data of that page
+  // when the user types anything in the search field, it also needs to search, the page needs to be resetted to 1
+  // search requests should be debounced, and should cancel any previous pending request
 
+  // the api url is:
+  // https://rickandmortyapi.com/api/character
+  // the search and page data needs to be send in the query params
+  // it will be seomthing like this: { name: "searchedValue" or null, page: pageValue }
+```
+
+Task 02
+```bash
+/**
+     * here's your task
+     * write some css to show only 4 line maximum in the paragraph
+     * when it's being overflowed, it should show `...` ellipsis at the end.
+     */
+```
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
 
 ## Development server
